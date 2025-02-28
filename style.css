@@ -43,6 +43,37 @@ iframe {
     object-fit: cover;
     border: 1px solid #ff7d7d;
 }
+/* Prevent horizontal scroll */
+body {
+    overflow-x: hidden;
+}
+
+/* Ensure content fits screen size */
+img {
+    max-width: 100%; /* Makes images responsive */
+    height: auto;    /* Maintains aspect ratio */
+}
+/* For small screens (like mobile phones) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Adjust text size */
+    }
+
+    .container {
+        width: 95%; /* Make sections fit smaller screens */
+    }
+
+    img {
+        width: 100%; /* Ensure images resize properly */
+    }
+}
+
+/* For larger screens (like desktops) */
+@media (min-width: 1024px) {
+    .container {
+        width: 80%; /* Make sections wider on bigger screens */
+    }
+}
 
 
 
